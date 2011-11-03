@@ -1,3 +1,9 @@
+# revision 18787
+# category Package
+# catalog-ctan /macros/latex/contrib/cmsd
+# catalog-date 2006-12-18 23:50:36 +0100
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-cmsd
 Version:	20061218
 Release:	1
@@ -48,6 +54,7 @@ ones.
 %{_texmfdistdir}/tex/latex/cmsd/ts1cmsd.fd
 %doc %{_texmfdistdir}/doc/latex/cmsd/liesmich
 %doc %{_texmfdistdir}/doc/latex/cmsd/readme
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -58,3 +65,5 @@ ones.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
