@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-cmsd
 Version:	20061218
-Release:	8
+Release:	9
 Summary:	Interfaces to the CM Sans Serif Bold fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cmsd
