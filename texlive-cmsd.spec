@@ -5,7 +5,7 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-cmsd
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	Interfaces to the CM Sans Serif Bold fonts
 Group:		Publishing
