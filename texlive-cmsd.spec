@@ -1,18 +1,12 @@
-# revision 18787
-# category Package
-# catalog-ctan /macros/latex/contrib/cmsd
-# catalog-date 2006-12-18 23:50:36 +0100
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-cmsd
-Version:	20190228
+Version:	18787
 Release:	1
 Summary:	Interfaces to the CM Sans Serif Bold fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cmsd
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmsd.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmsd.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmsd.r18787.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmsd.doc.r18787.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -31,12 +25,12 @@ the package just changes the way LaTeX makes use of the current
 ones.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -48,25 +42,10 @@ ones.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20061218-2
-+ Revision: 750327
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20061218-1
-+ Revision: 718085
-- texlive-cmsd
-- texlive-cmsd
-- texlive-cmsd
-- texlive-cmsd
-- texlive-cmsd
-
