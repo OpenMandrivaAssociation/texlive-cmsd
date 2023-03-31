@@ -1,6 +1,6 @@
 Name:		texlive-cmsd
 Version:	18787
-Release:	1
+Release:	2
 Summary:	Interfaces to the CM Sans Serif Bold fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cmsd
