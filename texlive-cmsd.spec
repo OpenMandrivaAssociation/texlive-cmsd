@@ -3,7 +3,7 @@ Version:	18787
 Release:	2
 Summary:	Interfaces to the CM Sans Serif Bold fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cmsd
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/cmsd
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmsd.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmsd.doc.r%{version}.tar.xz
